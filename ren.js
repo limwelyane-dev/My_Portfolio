@@ -1,0 +1,16 @@
+    function showSection(id) {
+    
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => {
+        section.style.display = 'none';
+      });
+
+      const target = document.getElementById(id);
+      if (target) {
+        target.style.display = 'block';
+      }
+    }
+
+    window.onload = function () {
+      showSection('about');
+    };
