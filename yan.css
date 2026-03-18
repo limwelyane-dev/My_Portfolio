@@ -90,8 +90,8 @@ background:#523e24;
 }
 
 .icons{
-    margin-top: 90px;
-    margin-bottom: 20px;
+    margin-top: 10em;
+    margin-bottom: 50px;
     
 }
 .icons ul{
@@ -154,8 +154,6 @@ transform:translateY(0);
 }
 
 }
-
-
 /* HERO */
 
 .hero-content{
@@ -297,6 +295,9 @@ transform:translateY(-12px);
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
+
+
+/* RESPONSIVE */
 
 @media(max-width:900px){
 
