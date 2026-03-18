@@ -1,16 +1,15 @@
-    function showSection(id) {
-    
-      const sections = document.querySelectorAll('.section');
-      sections.forEach(section => {
-        section.style.display = 'none';
-      });
+function showSection(id){
 
-      const target = document.getElementById(id);
-      if (target) {
-        target.style.display = 'block';
-      }
-    }
+let sections=document.querySelectorAll(".section");
 
-    window.onload = function () {
-      showSection('about');
-    };
+sections.forEach(section=>{
+section.style.display="none";
+});
+
+document.getElementById(id).style.display="block";
+
+}
+
+function toggleMenu(){
+    document.querySelector("header").classList.toggle("active");
+}
