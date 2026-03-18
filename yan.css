@@ -13,16 +13,12 @@ background-size:cover;
 background-position:center;
 
 }
-
-
 .container{
 
 display:flex;
 min-height:100vh;
 
 }
-
-
 /* SIDEBAR */
 
 header{
@@ -301,9 +297,6 @@ transform:translateY(-12px);
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
-
-
-/* RESPONSIVE */
 
 @media(max-width:900px){
 
