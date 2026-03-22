@@ -8,18 +8,20 @@
 <link rel="stylesheet" href="yan.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<script src="ren.js"></script>
 
 </head>
 
 <body>
-    <div class="menu-btn" onclick="toggleMenu()"><b>☰</b></div>
+    <div class="menu-btn" onclick="toggleMenu()">
+        ☰
+    </div>
+    <div class="overlay" onclick="toggleMenu()"></div>
     <div class="container">
         <header>
             <h3>My Portfolio</h3>
-            <img src="imglim.jpg" class="profile">
+            <img src="imglim.jpg" loading="lazy" class="profile">
             <h1>Limwel Ren Yane</h1>
-            <p>Web Developer</p>
+            <p>Frontend Developer</p>
             <nav> 
                 <button onclick="showSection('home'); toggleMenu()">Home</button>
                 <button onclick="showSection('about'); toggleMenu()">About</button>
@@ -38,98 +40,127 @@
         </header>
         <main>
             <section id="home" class="section hero">
-                <div class="hero-content">
+                <div class="top_text">
+                    <p>Profile</p>
+                    <button><a href="Resume.pdf">Resume</a></button>
+                </div>
+                <div class="first">
+                    <div class="hero-content">
 
-                    <div class="profile_img">
-                        <img src="imglim.jpg" alt="">
+                        <div class="profile_img">
+                            <img src="imglim.jpg" alt="">
+                        </div>
+
+                        <div class="hero-text">
+                            <h1>Hello I'm <span>Limwel</span></h1>
+                            <h2>Frontend Developer & IT Student</h2>
+                            <p>I build responsive websites and email templates using HTML, CSS, JavaScript and MJML.</p>
+                            <button onclick="showSection('projects')" class="btn">View My Work</button>
+                        </div>
+
                     </div>
-
-                    <div class="hero-text">
-                        <h1>Hello I'm <span>Limwel</span></h1>
-                        <h2>Web Developer & IT Student</h2>
-                        <p>I build responsive websites and email templates using HTML, CSS, JavaScript and MJML.</p>
-                        <button onclick="showSection('projects')" class="btn">View My Work</button>
-                    </div>
-
                 </div>
             </section>
 
             <section id="about" class="section" style="display:none">
-                <h2>About Me</h2>
-                <p>
-                    I am an Information Technology student passionate about web development and building responsive websites. I enjoy creating clean user interfaces and learning new technologies related to software development and cybersecurity.
-                </p><br>
-                <p>
-                    With <b>1 year and 2 months of experience</b> in building websites and responsive emails in Arcanys, I am eager to expand my skills further and share my knowledge in creating effective and engaging web solutions.
-                </p><br>
-                <h3>Education</h3>
-                <p>Bachelor of Science in Information Technology</p>
-                <p>PHINMA Cagayan de Oro College</p>
-                <p>2025 – 2026 Present</p><br>
-                <p>Bachelor of Science in Criminology</p>
-                <p>PHINMA Cagayan de Oro College</p>
-                <p>2019 – 2024</p>
+                <div class="top_text">
+                    <p>About</p>
+                    <button><a href="Resume.pdf">Resume</a></button>
+                </div>
+                <div class="first">
+                    <h2>About Me</h2>
+                    <p>
+                        I am an Information Technology student passionate about web development and building responsive websites. I enjoy creating clean user interfaces and learning new technologies related to software development and cybersecurity.
+                    </p><br>
+                    <p>
+                        With <b>1 year and 2 months of experience</b> in building websites and responsive emails in Arcanys, I am eager to expand my skills further and share my knowledge in creating effective and engaging web solutions.
+                    </p><br>
+                    <h3>Education</h3>
+                    <p>Bachelor of Science in Information Technology</p>
+                    <p>PHINMA Cagayan de Oro College</p>
+                    <p>2025 – 2026 Present</p><br>
+                    <p>Bachelor of Science in Criminology</p>
+                    <p>PHINMA Cagayan de Oro College</p>
+                    <p>2019 – 2024</p>
+                </div>
 
             </section>
 
             <section id="skills" class="section" style="display:none">
-                <h2>Skills</h2>
-                <div class="skill">
-                    <p>HTML</p>
-                    <div class="bar">
-                        <div class="progress html"></div>
+                <div class="top_text">
+                    <p>Skills</p>
+                    <button><a href="Resume.pdf">Resume</a></button>
+                </div>
+                <div class="first">
+                    <h2>Skills</h2>
+                    <div class="skill">
+                        <p>HTML</p>
+                        <div class="bar">
+                            <div class="progress html"></div>
+                        </div>
+                        </div>
+                        <div class="skill">
+                            <p>CSS</p>
+                            <div class="bar">
+                            <div class="progress css"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="skill">
-                    <p>CSS</p>
-                    <div class="bar">
-                        <div class="progress css"></div>
-                     </div>
-                </div>
-                <div class="skill">
-                    <p>JavaScript</p>
-                    <div class="bar">
-                        <div class="progress js"></div>
+                    <div class="skill">
+                        <p>JavaScript</p>
+                        <div class="bar">
+                            <div class="progress js"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="skill">
-                    <p>Jquery</p>
-                    <div class="bar">
-                        <div class="progress jquery"></div>
+                    <div class="skill">
+                        <p>Jquery</p>
+                        <div class="bar">
+                            <div class="progress jquery"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="skill">
-                    <p>MJML Email Templates</p>
-                    <div class="bar">
-                        <div class="progress mjml"></div>
+                    <div class="skill">
+                        <p>MJML Email Templates</p>
+                        <div class="bar">
+                            <div class="progress mjml"></div>
+                        </div>
                     </div>
                 </div>
             </section>
             
             <section id="projects" class="section" style="display:none">
-                <h2>Projects</h2>
-                <div class="project-grid">
-                    <div class="card">
-                        <h3>Portfolio Website</h3>
-                        <p>Responsive developer portfolio built with HTML and CSS.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Personal Business website</h3>
-                        <p>A Business Website offering different high-quality foods and drinks.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Java Receipt System</h3>
-                        <p>A console based receipt generator developed using Java.</p>
-                    </div>
-                    <div class="card">
-                        <h3>MJML Email Templates</h3>
-                        <p>Responsive email templates designed using MJML.</p>
+                <div class="top_text">
+                    <p>Projects</p>
+                    <button><a href="Resume.pdf">Resume</a></button>
+                </div>
+                <div class="first">
+                    <h2>Projects</h2>
+                    <div class="project-grid">
+                        <div class="card">
+                            <h3>Portfolio Website</h3>
+                            <p>Responsive developer portfolio built with HTML and CSS.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Personal Business website</h3>
+                            <p>A Business Website offering different high-quality foods and drinks.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Java Receipt System</h3>
+                            <p>A console based receipt generator developed using Java.</p>
+                        </div>
+                        <div class="card">
+                            <h3>MJML Email Templates</h3>
+                            <p>Responsive email templates designed using MJML.</p>
+                        </div>
                     </div>
                 </div>
             </section>
             
             <section id="contact" class="section" style="display:none">
-                <div class="contact_sec">
+                <div class="top_text">
+                    <p>Contact</p>
+                    <button><a href="Resume.pdf">Resume</a></button>
+                </div>
+                <div class="first">
+                    <div class="contact_sec">
                     <div>
                         <h2>Contact</h2>
                         <p>Email: limwelyane@gmail.com</p>
@@ -139,12 +170,17 @@
                 
                     <div>
                         <h3>Profile Links:</h3>
-                        <p>Facebook: <br>https://www.facebook.com/limwelren.yane.26</p>
+                        <p><h4>Facebook:</h4> https://www.facebook.com/limwelren.yane.26</p>
+                        <p><h4>LinkedIn:</h4> www.linkedin.com/in/limwel06profile</p>
+                        <p><h4>Github:</h4> https://github.com/limwelyane-dev</p>
                     </div>
+                </div>
                 </div>
             </section>
         </main>
     </div>
+
+    <script src="ren.js"></script>
 
 </body>
 </html>
