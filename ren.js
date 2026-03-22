@@ -1,3 +1,4 @@
+
 function showSection(id){
 
 let sections=document.querySelectorAll(".section");
